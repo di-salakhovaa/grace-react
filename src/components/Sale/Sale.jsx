@@ -6,7 +6,7 @@ function Sale() {
     const filteredProducts = PRODUCTS.filter((item) => item.sale);
 
     return (
-        <section>
+        <section id="sale">
             <div className="container">
                 <div className="wrapper">
                     <div className="section__header">
@@ -16,7 +16,7 @@ function Sale() {
                     <div className="sale__list">
                         {
                             filteredProducts.map((product) =>
-                                <SaleProduct id={product.id} url={product.image} saleCount={product.sale_count} />
+                                <SaleProduct key={product.id} id={product.id} url={product.image} saleCount={product.sale_count} />
                             )
                         }
                     </div>

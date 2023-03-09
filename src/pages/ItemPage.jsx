@@ -1,6 +1,9 @@
 import {PRODUCTS} from "../data/products.jsx";
 import image from "../assets/Office-365-personal.png"
+import {useParams} from "react-router-dom";
 const ItemPage = () => {
+    const params = useParams();
+    const prodId = params.id;
     return (
         <section>
             <div className="container">
@@ -13,7 +16,7 @@ const ItemPage = () => {
                         </div>
 
                         <div className="item__information">
-                            <h2 className="item__name">Visual Studio Professional 2022 для 1 ПК</h2>
+                            <h2 className="item__name">{prodId}</h2>
                             <p className="description">
                                 Microsoft Visual Studio — это линейка программного обеспечения от Microsoft, зарекомендовавшая себя как удобный и многофункциональный инструмент для разработки игр, приложений и программ с графическим интерфейсом Microsoft Visual Studio включает в себя компилятор, текстовый редактор, отладчик, а также средство автоматизации сборки и ряд других компонентов, позволяющих осуществлять разработку с большей эффективностью.
                                 <br/>

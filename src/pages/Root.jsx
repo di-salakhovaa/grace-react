@@ -8,6 +8,7 @@ export const ModalContext = createContext(null);
 const Root = () => {
     const [modal, setModal] = useState(false);
     const toggleModal = setModal.bind(this, !modal);
+
     return (
         <ModalContext.Provider value={{modal, toggleModal}}>
             <Modal />

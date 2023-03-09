@@ -1,6 +1,3 @@
-import logoIcon from '../../assets/logo.svg'
-import userIcon from '../../assets/user.svg'
-import basketIcon from '../../assets/basket.svg'
 import {useLocation} from "react-router-dom";
 import {useContext} from "react";
 import {ModalContext} from "../../pages/Root.jsx";
@@ -9,7 +6,7 @@ const CartButton = () => {
     const {toggleModal} = useContext(ModalContext);
 
     return (
-        <button >Корзина</button>
+        <button onClick={toggleModal} className="cart_button">Корзина</button>
     )
 }
 function Header() {
@@ -26,19 +23,14 @@ function Header() {
                     <nav className="menu__navigation">
                         <ul>
                             <li><a href="/">О нас</a></li>
-                            <li><a href="/">Каталог</a></li>
-                            <li><a href="/">Отзывы</a></li>
-                            <li><a href="/">Гарантии</a></li>
-                            <li><a href="/">Контакты</a></li>
+                            <li><a href="/#catalog">Каталог</a></li>
+                            <li><a href="/#sale">Скидки</a></li>
+                            <li><a href="/#sub">Подписка</a></li>
                         </ul>
                     </nav>
 
                     <div className="buttons">
                         <CartButton/>
-                        <a href="#">
-                            Корзина
-                        </a>
-
                         <a href="/user">
                             Личный кабинет
                         </a>

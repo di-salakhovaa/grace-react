@@ -1,6 +1,6 @@
 function Sub() {
     return (
-        <section className="section__background-color">
+        <section className="section__background-color" id="sub">
             <div className="container">
                 <div className="wrapper">
                     <div className="section__header">

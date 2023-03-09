@@ -65,7 +65,8 @@ li {
     align-items: center;
 }
 
-.header--fixed .menu__navigation ul {
+.header--fixed .menu__navigation ul,
+.footer__wrapper .menu__navigation ul {
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -78,7 +79,8 @@ li {
 }
 
 .header--fixed .header__logo,
-.header--fixed .buttons {
+.header--fixed .buttons,
+.header--fixed .cart_button {
     color: white;
 }
 
@@ -94,6 +96,19 @@ li {
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+.cart_button {
+    cursor: pointer;
+
+    outline: none;
+    border: none;
+    background-color: inherit;
+
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2B2441;
 }
 
 /* main */

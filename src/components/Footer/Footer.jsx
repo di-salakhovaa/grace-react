@@ -11,11 +11,10 @@ function Footer() {
 
                     <nav className="menu__navigation">
                         <ul>
-                            <li><a href="?">О нас</a></li>
-                            <li><a href="?">Каталог</a></li>
-                            <li><a href="?">Отзывы</a></li>
-                            <li><a href="?">Гарантии</a></li>
-                            <li><a href="?">Контакты</a></li>
+                            <li><a href="/">О нас</a></li>
+                            <li><a href="/#catalog">Каталог</a></li>
+                            <li><a href="/#sale">Скидки</a></li>
+                            <li><a href="/#sub">Подписка</a></li>
                             <li><a href="?">Оферта</a></li>
                         </ul>
                     </nav>

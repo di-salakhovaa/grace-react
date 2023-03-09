@@ -5,6 +5,11 @@ function Modal() {
     const {modal, toggleModal} = useContext(ModalContext);
     const overlayRef = useRef();
 
+    const close = (e) => {
+        if (e.target === overlayRef.current) {
+            toggleModal();
+        }
+    }
     return (
         <div className={`overlay ${modal ? "active" : ""}`} ref={overlayRef}>
             <div className="modal">
