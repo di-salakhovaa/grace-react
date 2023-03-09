@@ -22,7 +22,7 @@ function Catalog() {
                     <div className="catalog__list">
                         {
                             PRODUCTS.map((product) => (
-                                <Product url={product.image} name={product.name} price={product.price}/>
+                                <Product id={product.id} url={product.image} name={product.name} price={product.price}/>
                             ))
                         }
                     </div>

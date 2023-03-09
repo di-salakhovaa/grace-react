@@ -1,6 +1,5 @@
 import {PRODUCTS} from "../../data/products.jsx";
 import SaleProduct from "../SaleProduct/SaleProduct.jsx";
-import Product from "../Products/Product.jsx";
 
 function Sale() {
 
@@ -17,9 +16,7 @@ function Sale() {
                     <div className="sale__list">
                         {
                             filteredProducts.map((product) =>
-
-                               // return <p>{product.name}</p>
-                                <SaleProduct url={product.image} saleCount={product.sale_count} />
+                                <SaleProduct id={product.id} url={product.image} saleCount={product.sale_count} />
                             )
                         }
                     </div>

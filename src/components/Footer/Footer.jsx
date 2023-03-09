@@ -6,7 +6,7 @@ function Footer() {
             <div className="container">
                 <div className="footer__wrapper">
                     <a href="?" className="header__logo">
-                        <img src={logoIcon} alt="" />
+                        grace
                     </a>
 
                     <nav className="menu__navigation">

@@ -1,7 +1,9 @@
-const Product = ({url, name, price}) => {
+import {NavLink} from "react-router-dom";
+
+const Product = ({id, url, name, price}) => {
     return (
         <div className="catalog__item">
-            <a href="?">
+            <NavLink to={'/products/' + id}>
                 <div className="catalog__item_image">
                     <img src={url} alt=""/>
                 </div>
@@ -10,7 +12,7 @@ const Product = ({url, name, price}) => {
                     <h3 className="catalog__item_name">{name}</h3>
                     <p className="catalog__item_price">{price}</p>
                 </div>
-            </a>
+            </NavLink>
         </div>
     )
 }

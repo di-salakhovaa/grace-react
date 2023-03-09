@@ -1,7 +1,9 @@
-const SaleProduct = ({url, saleCount}) => {
+import {NavLink} from "react-router-dom";
+
+const SaleProduct = ({id, url, saleCount}) => {
     return (
         <div className="sale__item">
-            <a href="?">
+            <NavLink to={'/products/' + id}>
                 <div className="sale__item_image">
                     <img src={url} alt=""/>
                 </div>
@@ -9,7 +11,7 @@ const SaleProduct = ({url, saleCount}) => {
                 <div className="sale__item_information">
                     <p>{saleCount} %</p>
                 </div>
-            </a>
+            </NavLink>
         </div>
     )
 }
