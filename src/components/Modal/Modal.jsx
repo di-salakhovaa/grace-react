@@ -11,7 +11,7 @@ function Modal() {
         }
     }
     return (
-        <div className={`overlay ${modal ? "active" : ""}`} ref={overlayRef}>
+        <div className={`overlay ${modal ? "active" : ""}`} ref={overlayRef} onClick={(e) => close(e)}>
             <div className="modal">
 
             </div>

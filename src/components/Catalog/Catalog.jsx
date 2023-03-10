@@ -10,7 +10,7 @@ function Catalog() {
     const filterProducts = products.filter((item) => item.name.toLowerCase().includes(query));
 
     const onChangeQuery = (e) => {
-        setQuery(e.target.value.toLowerCase);
+        setQuery(e.target.value.toLowerCase());
     }
 
     return (
