@@ -491,8 +491,116 @@ footer {
     background-color: white;
 
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
 
     width: 35%;
     height: 100%;
+
+    padding: 30px;
+}
+
+.modal-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-list {
+    margin-top: 30px;
+
+    overflow-y: auto;
+    height: 60vh;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+.modal__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal__image {
+    border: 1px solid #DEDEDE;
+    padding: 8px;
+    width: 138px;
+    height: 186px;
+}
+
+.modal__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.modal__name,
+.modal__price {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.modal__delete {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #C4C4C4;
+
+    transition: all 0.8s ease;
+}
+
+.modal__delete:hover {
+    color: #FF2C62;
+}
+
+
+.modal-bottom {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.total_price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.total_price span {
+    color: #FF2C62;
+}
+
+.button_order {
+    cursor: pointer;
+
+    outline: none;
+    border: 1px solid #2B2441;
+    background-color: #2B2441;
+
+    transition: all 0.8s ease;
+
+    padding: 16px;
+
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+
+.button_order:hover {
+    background-color: #FF2C62;
+    border: 1px solid #FF2C62;
 }
