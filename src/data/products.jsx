@@ -19,7 +19,7 @@ export const PRODUCTS = [
         id: 1,
         name: "VPN Cloudflare 1.1.1.1 - WARP+",
         image: image,
-        price: "1 190",
+        price: 1190,
         sale: false,
         sale_count: "10",
         info: "ggg"
@@ -29,7 +29,7 @@ export const PRODUCTS = [
         id: 2,
         name: "Dr.Web Security Space",
         image: image2,
-        price: "1 190",
+        price: 2300,
         sale: false,
         sale_count: "10",
         info: "ggg"
@@ -39,7 +39,7 @@ export const PRODUCTS = [
         id: 3,
         name: "Kaspersky Anti-Virus",
         image: image3,
-        price: "1 190",
+        price: 650,
         sale: false,
         sale_count: "10",
         info: "ggg"
@@ -49,7 +49,7 @@ export const PRODUCTS = [
         id: 4,
         name: "Kaspersky Internet Security",
         image: image4,
-        price: "1 190",
+        price: 870,
         sale: false,
         sale_count: "10",
         info: "ggg"
@@ -59,7 +59,7 @@ export const PRODUCTS = [
         id: 5,
         name: "Kaspersky Total Security",
         image: image5,
-        price: "1 190",
+        price: 3400,
         sale: true,
         sale_count: "30",
         info: "ggg"
@@ -69,7 +69,7 @@ export const PRODUCTS = [
         id: 6,
         name: " Office Home and Business for Mac 2019",
         image: image6,
-        price: "1 190",
+        price: 1680,
         sale: false,
         sale_count: "10",
         info: "ggg"
@@ -79,7 +79,7 @@ export const PRODUCTS = [
         id: 7,
         name: "Office Home and Business for Mac 2021",
         image: image7,
-        price: "1 190",
+        price: 1400,
         sale: true,
         sale_count: "25",
         info: "ggg"
@@ -89,7 +89,7 @@ export const PRODUCTS = [
         id: 8,
         name: "Microsoft Office Home & Business 2021",
         image: image8,
-        price: "1 190",
+        price: 1190,
         sale: false,
         sale_count: "10",
         info: "ggg"
@@ -99,7 +99,7 @@ export const PRODUCTS = [
         id: 9,
         name: "Microsoft 365 для семьи",
         image: image9,
-        price: "1 190",
+        price: 5200,
         sale: false,
         sale_count: "10",
         info: "ggg"
@@ -109,7 +109,7 @@ export const PRODUCTS = [
         id: 10,
         name: "Microsoft 365 персональный",
         image: image10,
-        price: "1 190",
+        price: 3700,
         sale: false,
         sale_count: "10",
         info: "Серия Microsoft Office берет свое начало в далёком 1990 году и за это время проделала огромный путь. Word, Power Point, Excel и другие программы серии постепенно наращивали свой функционал, улучшали удобство использования и избавлялись от багов.\n" +
@@ -131,7 +131,7 @@ export const PRODUCTS = [
         id: 11,
         name: "Microsoft Office 2019 Professional plus",
         image: image11,
-        price: "1 190",
+        price: 690,
         sale: true,
         sale_count: "12",
         info: "ggg"
@@ -141,7 +141,7 @@ export const PRODUCTS = [
         id: 12,
         name: "Microsoft Office 2021 Professional plus",
         image: image12,
-        price: "1 190",
+        price: 1590,
         sale: false,
         sale_count: "10",
         info: "ggg"
@@ -151,7 +151,7 @@ export const PRODUCTS = [
         id: 13,
         name: "Microsoft Project Professional 2019",
         image: image13,
-        price: "1 190",
+        price: 3090,
         sale: false,
         sale_count: "10",
         info: "ggg"
@@ -161,7 +161,7 @@ export const PRODUCTS = [
         id: 14,
         name: "Microsoft Project Professional 2021",
         image: image14,
-        price: "1 190",
+        price: 299,
         sale: true,
         sale_count: "18",
         info: "ggg"
@@ -171,7 +171,7 @@ export const PRODUCTS = [
         id: 15,
         name: "Microsoft Visio Professional 2019",
         image: image15,
-        price: "1 190",
+        price: 1860,
         sale: false,
         sale_count: "10",
         info: "ggg"

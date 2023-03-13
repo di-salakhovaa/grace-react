@@ -1,40 +1,43 @@
 import {PRODUCTS} from "../data/products.jsx";
-import image from "../assets/Office-365-personal.png"
 import {useParams} from "react-router-dom";
+import {useContext} from "react";
+import {CartContext} from "./Root.jsx";
+import formatMoney from "../utils/formatMoney.js";
 
 const ItemPage = () => {
-    const params = useParams();
-    const prodId = params.id;
-    const product = PRODUCTS.find(p => p.id == prodId);
+    const {id} = useParams();
+    const product = PRODUCTS.find(p => p.id == id);
 
-    if (product === undefined) {
+    const {addToCart} = useContext(CartContext);
+
+    if (!product) {
         return <h2>Товар не найден</h2>
-    } else {
-        return (
-            <section>
-                <div className="container">
-                    <div className="wrapper">
-                        <div className="item__body">
-                            <div className="item__image_body">
-                                <div className="item__image">
-                                    <img src={product.image} alt=""/>
-                                </div>
+    }
+    return (
+        <section>
+            <div className="container">
+                <div className="wrapper">
+                    <div className="item__body">
+                        <div className="item__image_body">
+                            <div className="item__image">
+                                <img src={product.image} alt=""/>
                             </div>
+                        </div>
 
-                            <div className="item__information">
-                                <h2 className="item__name">{product.name}</h2>
-                                <p className="description">{product.info}</p>
+                        <div className="item__information">
+                            <h2 className="item__name">{product.name}</h2>
+                            <p className="description">{product.info}</p>
 
-                                <p className="price">{product.price} ₽</p>
+                            <p className="price">{formatMoney(product.price)} ₽</p>
 
-                                <a href="?" className="button_add">Добавить в корзину</a>
-                            </div>
+                            <button onClick={() => addToCart(product)} className="button_add">Добавить в корзину
+                            </button>
                         </div>
                     </div>
                 </div>
-            </section>
-        )
-    }
+            </div>
+        </section>
+    )
 }
 
 export default ItemPage;

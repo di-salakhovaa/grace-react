@@ -7,7 +7,7 @@ export const SLIDES = [
     {
         id: 1,
         url: banner,
-        name: "Купить Windows 11 Education <br/>\n" +
+        name: "Купить Windows 11 Education\n" +
             "(Для образовательных учреждений)",
         button: {
             path: "/",
@@ -17,7 +17,7 @@ export const SLIDES = [
     {
         id: 2,
         url: banner2,
-        name: "Купить Windows 11 Education <br/>\n" +
+        name: "Купить Windows 11 Education\n" +
             "(Для образовательных учреждений)",
         button: {
             path: "/",
@@ -27,7 +27,7 @@ export const SLIDES = [
     {
         id: 3,
         url: banner3,
-        name: "Купить Windows 11 Education <br/>\n" +
+        name: "Купить Windows 11 Education\n" +
             "(Для образовательных учреждений)",
         button: {
             path: "/",
@@ -37,7 +37,7 @@ export const SLIDES = [
     {
         id: 4,
         url: banner4,
-        name: "Купить Windows 11 Education <br/>\n" +
+        name: "Купить Windows 11 Education\n" +
             "(Для образовательных учреждений)",
         button: {
             path: "/",

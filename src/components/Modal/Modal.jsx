@@ -1,10 +1,17 @@
 import {useContext, useRef} from "react";
-import {ModalContext} from "../../pages/Root.jsx";
-import image from '../../assets/Project_2021_Professional.png';
+import {CartContext, ModalContext} from "../../pages/Root.jsx";
+import CartItem from "../CartItem/CartItem.jsx";
+import cartTotal from "../../utils/cartTotal.js";
+import formatMoney from "../../utils/formatMoney.js";
 
 function Modal() {
     const {modal, toggleModal} = useContext(ModalContext);
+
+    const cart = useContext(CartContext);
+
     const overlayRef = useRef();
+
+    const total = cartTotal(cart.cartItems);
 
     const close = (e) => {
         if (e.target === overlayRef.current) {
@@ -18,46 +25,18 @@ function Modal() {
                     <h2 className="title">Корзина</h2>
 
                     <div className="modal-list">
-                        <div className="modal__item">
-                            <div className="modal__image">
-                                <img src={image} alt=""/>
-                            </div>
-
-                            <div className="modal__information">
-                                <h3 className="modal__name">dhbguvbg</h3>
-                                <p className="modal__price">2 260 ₽</p>
-                                <a href="#" className="modal__delete">Удалить</a>
-                            </div>
-                        </div>
-
-                        <div className="modal__item">
-                            <div className="modal__image">
-                                <img src={image} alt=""/>
-                            </div>
-
-                            <div className="modal__information">
-                                <h3 className="modal__name">dhbguvbg</h3>
-                                <p className="modal__price">2 260 ₽</p>
-                                <a href="#" className="modal__delete">Удалить</a>
-                            </div>
-                        </div>
-
-                        <div className="modal__item">
-                            <div className="modal__image">
-                                <img src={image} alt=""/>
-                            </div>
-
-                            <div className="modal__information">
-                                <h3 className="modal__name">dhbguvbg</h3>
-                                <p className="modal__price">2 260 ₽</p>
-                                <a href="#" className="modal__delete">Удалить</a>
-                            </div>
-                        </div>
+                        {
+                            cart.cartItems.map((item) => {
+                                return(
+                                    <CartItem key={item.id} item={item}/>
+                                )
+                            })
+                        }
                     </div>
                 </div>
 
                 <div className="modal-bottom">
-                    <p className="total_price">Итого: <span>2 400 ₽</span></p>
+                    <p className="total_price">Итого: <span>{formatMoney(total)} ₽</span></p>
                     <button className="button_order">Оформить заказ</button>
                 </div>
             </div>

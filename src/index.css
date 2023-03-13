@@ -433,6 +433,8 @@ footer {
     text-align: center;
     border: 1px solid #2B2441;
     width: 270px;
+
+    cursor: pointer;
 }
 
 .button_add:hover {
@@ -551,6 +553,7 @@ footer {
 }
 
 .modal__delete {
+    font-family: 'Exo 2', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -558,6 +561,14 @@ footer {
     color: #C4C4C4;
 
     transition: all 0.8s ease;
+
+    border: none;
+    outline: none;
+    background-color: inherit;
+
+    cursor: pointer;
+
+    text-align: left;
 }
 
 .modal__delete:hover {
